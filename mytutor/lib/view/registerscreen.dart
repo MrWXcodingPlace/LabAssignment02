@@ -40,7 +40,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
     screenHeight = MediaQuery.of(context).size.height;
     screenWidth = MediaQuery.of(context).size.width;
 
-    //暂时不明
     if (screenWidth >= 800) {
       ctrwidth = screenWidth / 1.5;
     }
@@ -230,7 +229,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
           borderRadius: BorderRadius.circular(5.0),
         ),
       ),
-      //验证密码
       validator: (value) {
         if (value == null || value.isEmpty) {
           return 'Please enter your password';
